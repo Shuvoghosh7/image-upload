@@ -34,7 +34,7 @@ const UploadImage = () => {
         }
       }
   
-      const res = await axios.post("http://localhost:5000/api/v1/upload-img", formData, config);
+      const res = await axios.post("http://localhost:5000/images/upload-img", formData, config);
   
       if (res.data.status === 401 || !res.data) {
         console.log("errror")
